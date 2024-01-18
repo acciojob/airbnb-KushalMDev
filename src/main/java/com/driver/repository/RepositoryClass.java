@@ -21,7 +21,7 @@ public class RepositoryClass {
 
     public String addHotel(Hotel hotel) {
         // TODO Auto-generated method stub
-        if(hotel==null || hotel.getHotelName().equals(null) || hotelMap.containsKey(hotel.getHotelName())){
+        if(hotel.equals(null) || hotel.getHotelName().equals(null) || hotelMap.containsKey(hotel.getHotelName())){
             return "FAILURE";
         }
         hotelMap.put(hotel.getHotelName(),hotel);
