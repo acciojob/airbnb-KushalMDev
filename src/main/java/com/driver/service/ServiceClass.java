@@ -13,8 +13,8 @@ import com.driver.repository.RepositoryClass;
 
 @Service
 public class ServiceClass {
-    @Autowired
-    RepositoryClass repositoryClass;
+   // @Autowired
+    RepositoryClass repositoryClass=new RepositoryClass();
 
     public String addHotel(Hotel hotel) {
         // TODO Auto-generated method stub
